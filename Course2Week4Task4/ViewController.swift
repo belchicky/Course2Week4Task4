@@ -9,12 +9,22 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var textForSending: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        view.backgroundColor = #colorLiteral(red: 1, green: 0.4932718873, blue: 0.4739984274, alpha: 1)
+        textForSending.text = ""
     }
-
-
+    
+    @IBAction func toViewController3(_ sender: Any) {
+        performSegue(withIdentifier: "toThirdVC", sender: nil)
+      }
+    
+   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    if let distanation = segue.destination as? ViewController3 {
+            distanation.text = textForSending.text
+        }
+    }
 }
 
