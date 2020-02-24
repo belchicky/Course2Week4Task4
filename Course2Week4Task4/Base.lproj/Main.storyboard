@@ -87,7 +87,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="trI-WV-xcV"/>
                     <connections>
-                        <outlet property="myLebal" destination="auo-An-O3s" id="JQZ-2P-7ee"/>
+                        <outlet property="myLabel" destination="auo-An-O3s" id="Loq-Eo-gOI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wcl-Dg-A30" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -16,14 +16,14 @@ class ViewController2: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = #colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)
-        setupButtonForChildView()
-        setupButtonForViewController4()
+        ChildViewSetupButton()
+        ViewController4SetupButton()
     }
 }
 
 extension ViewController2 {
     
-    private func setupButtonForChildView() {
+    private func ChildViewSetupButton() {
         
         let x = view.center.x - 100
         let y = view.center.y - 55
@@ -38,7 +38,7 @@ extension ViewController2 {
         view.addSubview(buttonForChild)
         
     }
-    private func setupButtonForViewController4() {
+    private func ViewController4SetupButton() {
         
         let x = view.center.x - 100
         let y = view.center.y - 100
@@ -63,10 +63,10 @@ extension ViewController2 {
         addChild(childView)
         view.addSubview(childView.view)
         childView.didMove(toParent: self)
-        setConstraintForChildView()
+        constraintForChildView()
     }
     
-    private func setConstraintForChildView() {
+    private func constraintForChildView() {
         
         childView.view.translatesAutoresizingMaskIntoConstraints = false
         childView.view.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 50).isActive = true

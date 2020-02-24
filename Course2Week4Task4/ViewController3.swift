@@ -10,14 +10,14 @@ import UIKit
 
 class ViewController3: UIViewController {
     var text: String?
-    @IBOutlet weak var myLebal: UILabel!
+    @IBOutlet weak var myLabel: UILabel!
     @IBAction func pressUnwind(_ sender: Any) {
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         if text != nil {
-            myLebal.text = text
+            myLabel.text = text
         }
     }
     
